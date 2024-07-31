@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUS Booking Form</title>
+    <link rel="stylesheet" href="{% static 'css/details.css' %}">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <form method="POST"  >
+    {% csrf_token %}
+    <div class="container"><!--container-->
+
+        <form class="form-group"><!--form-->
+            <h1 class="text-center">BUS Booking Form</h1>
+
+            <div id="form"><!--form-->
+                
+
+                <div id="input5"><!--input5-->
+                    <h3 class="text-white">Personal Details</h3>
+                </div><!--input5-->
+
+                <div id="input6"><!--input6-->
+                    <input type="text" id="input-group" placeholder="Full Name" name="ufname">
+                    <input type="number" id="input-group" placeholder="Phone Number" name="unumber">
+                    <input type="email" id="input-group" placeholder="Email" name="uemail">
+                    <input type="number" id="input-group" placeholder="Age" name="uage">
+                    <div id="input6"><!--input2-->
+                        <select  id="input-group" style="background: black;" name="ugender">
+                            <option value="">Gender</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                            <option value="">others</option>
+                            
+                        </select>
+                        <input type="number" id="input-group" placeholder="Adult" name="uadult">
+                        
+                    </div><!--input2-->
+                    
+                </div><!--input6-->
+        
+                    <h3 class="text-white">Booking Details</h3>
+
+            <div id="input"><!--input-->
+                <select  id="input-group" style="background: black;" name="ubp">
+                    <option value="">BOARDING POINT</option>
+                    <option value="">CMBT</option>
+                    <option value="">KILAMBAKAM</option>
+                    <option value="">TAMBARAM</option>
+                </select>
+                <select  id="input-group" style="background: black;" name="udp">
+                    <option value="">DROPING POINT</option>
+                    <option value="">KARUR</option>
+                    <option value="">VELAKOVIL</option>
+                    <option value="">DHARAPURAM</option>
+                </select>
+
+                <select  id="input-group" style="background: black;" name="uidtype">
+                    <option value="">ID CARD TYPE</option>
+                    <option value="">Driving license</option>
+                    <option value="">Aadharcard</option>
+                    <option value="">Voter id</option>
+                    <option value="">PAN Card</option>
+
+                </select>
+               
+                <input type="text" id="input-group" placeholder="ID Card No" name="uid">
+                
+                
+                <select  id="input-group" style="background: black;" name="useat">
+                    <option value="">Upper window Seat</option>
+                    <option value="">Sidelower Seat</option>
+                    <option value="">Sidelower windowSeat</option>
+                    <option value="">sideupper Seat</option>
+                </select>
+                </div><!--input-->
+<hr>
+         
+                <div id="input4"><!--input4-->
+                    <input type="text" id="input-group" placeholder="Return Date">
+                    <input type="text" id="input-group" placeholder="Return time">
+                    <input type="text" id="input-group1" placeholder="Any Message">
+                </div><!--input4-->
+
+               
+                <a href="/payment/"><button type="submit" class="btn btn-warning text-white">Submit Form</button></a>
+                <button type="reset" class="btn btn-primary">Clear Form</button>
+            </div><!--form-->
+
+        </form><!--form-->
+    </form>
+
+    </div><!--container-->
+</body>
+</html>

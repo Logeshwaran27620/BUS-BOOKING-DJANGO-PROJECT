@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #d3cbcb;
+    font-weight: 600;
+}
+
+/* NAV BAR */
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+.nav-logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover{
+    border-bottom: 2px solid #fff;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn{
+    display: none;
+}
+.carousel-inner{
+    width: 100%;
+    height: 530px;
+}
+.carousel-item{
+    width: 100%;
+    height: 95%;
+}
+.image{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.drop{
+	color: black;
+	width: 30%;
+	height: 40px;
+	font-size: 1.3em;
+	margin-bottom: 20px;
+	margin-right: 1.1%;
+	margin-left: 1.2%;
+}
+.dep{
+    text-align: center;
+}
+
+
+#busButton{
+	background-color: rgba(150,0,0,0.7);
+	padding: 9px;
+	border: none;
+    width: 170px;
+}
+.img1{
+   
+    width: 100%;
+    height: 100px;
+    
+}
+.pic{
+    object-fit: cover;
+    width: 100%;
+}
+#home{
+    padding-left: 30px;
+}
+.container1{
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: rgba(218, 178, 178, 0.906);
+    margin: 20px;
+    border-radius: 15px;
+    border-top-left-radius: 300px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.container2{
+    background-color: rgba(218, 178, 178, 0.906);
+    margin: 20px;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    padding-bottom: 10px;
+ 
+}
+.txt{
+    text-align: center;
+}
+.container3{
+    background-color: rgba(218, 178, 178, 0.906);
+    margin: 20px;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    text-align: center;
+    padding-bottom : 10px;
+ 
+}
+
+
+/* Search Bus */
+
+.filter-section {
+    width: 24%;
+    position: sticky;
+    bottom: 0px;
+    align-self: flex-end;
+}
+
+.result-section {
+    width: 74%;
+    margin-left: 20px;
+}
+
+
+
+.swap-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 10px solid white !important;
+    border-radius: 50%;
+    position: relative;
+    bottom: 2px;
+    right: 5px;
+    cursor: pointer;
+}
+
+
+
+.col-sm-1 {
+    width: 7.333333%;
+}
+
+
+.offer-img {
+    width: 170px;
+}
+
+.sortby-col {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.sort-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 18px;
+    cursor: pointer;
+}
+
+.sort-text h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 1.5rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sort-text h1 {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Quicksand;
+}
+
+.display-arrow {
+    display: none;
+    color: black;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+.search-result {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+}
+
+.bus-info-col {
+    width: 30.333333%;
+    margin: 20px 0px;
+}
+
+.search-bus-info h2 {
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Quicksand;
+}
+
+.search-text-p {
+    color: rgb(119, 119, 119);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    overflow:visible;
+    margin-left: 4px;
+}
+
+.bus-rating {
+    background: rgb(24, 161, 96);
+    border-color: rgb(24, 161, 96);
+    border: 1px solid;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: rgb(255, 255, 255);
+    border-radius: 0.3rem;
+    font-size: 14px;
+}
+
+.seprater {
+    border-right: 1px solid grey;
+    margin-right: 0.6rem;
+    margin-left: 0.8rem;
+    height: 22px;
+}
+
+.dep-time {
+    width: 12.333333%;
+    margin: 20px 0px;
+}
+
+.dep-time h2 {
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: Quicksand;
+}
+
+.total-time {
+    width: 9.333333%;
+    margin: 20px 0px;
+}
+
+.total-time-text {
+    margin-top: 10px;
+    color: rgb(119, 119, 119);
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.time-border-bottom {
+    display: inline-flex;
+    border: 0.5px solid rgb(239, 243, 248);
+    width: 100%;
+    margin-bottom: 2px;
+    position: relative;
+    bottom: 30px;
+}
+
+.bus-price {
+    margin: 20px 0px;
+}
+
+.bus-price h2 {
+    text-align: right;
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: Quicksand;
+}
+
+.bus-seats {
+    width: 17.666667%;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: right;
+}
+
+.bus-seats p {
+    color: rgb(119, 119, 119);
+    font-size: 10px;
+    margin-top: 20px;
+    height: 0px;
+}
+
+.bus-seats button {
+    height: 40px;
+    padding: 4px 15px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border-radius: 0.4rem;
+    background: linear-gradient(90deg, rgb(71, 138, 201), #1089ff);
+    font-family: Quicksand;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px 0 hsl(0deg 0% 77% / 50%);
+}
+
+.filter-top-text h2 {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 22px;
+    font-family: Quicksand;
+    font-weight: bold;
+    color: black;
+    margin: 20px 4px;
+
+}
+
+.filter-text h2 {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: bold;
+    color: black;
+    margin: 10px 4px;
+
+}
+
+.filter-top-clear {
+    align-items: flex-end;
+    text-align: end;
+}
+
+.filter-clear {
+    align-items: flex-end;
+    text-align: end;
+}
+
+.filter-top-clear h4 {
+    color: rgb(197, 197, 197);
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: bold;
+    margin: 28px 10px;
+}
+
+.filter-clear h4 {
+    color: rgb(197, 197, 197);
+    font-size: 14px;
+    font-family: Quicksand;
+    font-weight: bold;
+    margin: 12px 10px;
+}
+
+.search-hr {
+    margin: 1em -10px;
+    width: 107%;
+}
+
+.filter-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 10px 15px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Quicksand;
+    font-weight: 100;
+}
+
+.filter-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.filter-checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.filter-checkbox input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.filter-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.filter-checkbox .checkmark:after {
+    content: "";
+    left: 10px;
+    top: 2px;
+    position: absolute;
+    width: 6px;
+    height: 15px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+}
+
+

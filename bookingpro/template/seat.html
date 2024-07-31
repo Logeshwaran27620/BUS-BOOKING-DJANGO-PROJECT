@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <link rel="stylesheet" href="{% static 'css\seat.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  
+</head>
+<body>
+    <section>
+        <nav class="nav">
+
+            <div class="logonav">
+                <img src="{% static 'image\assets\logoo.png' %}"  width="300px">
+              </div>
+    
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="/1/" class="link active">Home</a></li>
+                    <li><a href="/1/" class="link">booking</a></li>
+                    <li><a href="/gallery/" class="link">gallery</a></li>
+                    <li><a href="/contact/" class="link">contact us</a></li>
+                    <li><a href="/2/" class="link">Login</a></li>
+                    <li><a href="/register/" class="link">Register</a></li>
+
+                </ul>
+            </div>
+          
+        </nav>
+ 
+    <div class="container">
+        <br>
+        <br>
+        <br>
+       
+        <div class="seats">
+            <div class="seat-layout">
+                <div class="seat-section">
+                    <fieldset>
+                    <h2><span>Lower</span></h2>
+                    <div class="seat-grid">
+                        
+                        <div class="seat available" id="lower-1">L1</div>
+                        <div class="seat available" id="lower-2">L2</div>
+                        <div class="seat available" id="lower-3">L3</div>
+                        <div class="seat available" id="lower-4">L4</div>
+                        <div class="seat available" id="lower-5">L5</div>
+                        <div class="seat available" id="lower-6">L6</div>
+                        <div class="seat available" id="lower-1">L7</div>
+                        <div class="seat available" id="lower-2">L8</div>
+                        <div class="seat available" id="lower-3">L9</div>
+                        <div class="seat available" id="lower-4">L10</div>
+                        <div class="seat available" id="lower-5">L11</div>
+                        <div class="seat available" id="lower-6">L12</div>
+                        <!-- Add remaining seats -->
+                    </div>
+                
+                </div>
+            </fieldset>
+
+                <div class="seat-section">
+                    <fieldset>
+                    <h2>Upper</h2>
+                    <div class="seat-grid">
+                        <div class="seat available" id="upper-1">U1</div>
+                        <div class="seat available" id="upper-2">U2</div>
+                        <div class="seat available" id="upper-3">U3</div>
+                        <div class="seat available" id="upper-4">U4</div>
+                        <div class="seat available" id="upper-5">U5</div>
+                        <div class="seat available" id="upper-1">U6</div>
+                        <div class="seat available" id="upper-2">U7</div>
+                        <div class="seat available" id="upper-3">U8</div>
+                        <div class="seat available" id="upper-4">U9</div>
+                        <div class="seat available" id="upper-5">U10</div>
+                        <div class="seat available" id="upper-5">U11</div>
+                        <div class="seat available" id="upper-5">U12</div>
+                        <!-- Add remaining seats -->
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+
+
+
+            <div class="fare-details">
+                
+<br>
+
+                <fieldset>
+                <h3>Fare Details</h3>
+                <p>Seats: <span id="selected-seats">0</span></p>
+                <p>Ticket Fare: <span id="ticket-fare" style="background-color: white;">₹ 0</span></p>
+            </fieldset>
+            </div>
+            <div class="boarding-dropoff">
+                <br>
+                <label for="boarding-point"><b>Orgin</b></label>
+                <select id="boarding-point">
+                    <option value="CHENNAI">CHENNAI</option>
+                    <option value="COIMBATORE">COIMBATORE</option>
+                    <option value="MADURAI">MADURAI</option>
+                    <option value="TIRUCHY">TIRUCHY</option>
+                    <option value="DHARAPURAM">DHARAPURAM</option>
+                    <!-- Add more options -->
+                </select>
+                <label for="dropoff-point"><b>Destination</b></label>
+                <select id="dropoff-point">
+                    <option value="CHENNAI">CHENNAI</option>
+                    <option value="COIMBATORE">COIMBATORE</option>
+                    <option value="MADURAI">MADURAI</option>
+                    <option value="TIRUCHY">TIRUCHY</option>
+                    <option value="DHARAPURAM">DHARAPURAM</option>
+                   
+                    <!-- Add more options -->
+                </select>
+                <a href="/form"><button id="continue">Continue</button></a>
+                
+            
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+    <script src="{% static 'js\jss.js' %}"></script>
+</body>
+</html>

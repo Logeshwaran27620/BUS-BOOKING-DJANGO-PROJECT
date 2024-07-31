@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url(https://wallpaperaccess.com/full/4341373.jpg); */
+    /* background-image: url(https://wallpaperaccess.com/full/32554.jpg); */
+    /* background-image: url(https://wallpaperaccess.com/full/2574109.jpg); */
+    background-image: url(https://images7.alphacoders.com/980/980235.jpg);
+
+    object-fit: fill;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.seat-price button {
+    margin: 1px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+
+.seats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.seat-layout {
+    display: flex;
+    
+}
+
+.seat-section {
+    margin: 20px;
+}
+
+.seat-section h2 {
+    text-align: center;
+}
+
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 45px);
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+.seat {
+    width: 40px;
+    height: 80px;
+    background-color: #d3d3d3;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.seat.available {
+    background-color: #e0e0e0;
+}
+
+.seat.booked {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+.seat.selected {
+    background-color: #76c7c0;
+}
+
+.fare-details {
+    margin-left: 20px;
+}
+
+.boarding-dropoff {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.boarding-dropoff label, .boarding-dropoff select, .boarding-dropoff button {
+    margin: 5px 0;
+}
+
+#continue {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* seat */
+.seat.available {
+    background-color: white;
+}
+
+.seat.selected {
+    background-color: green;
+}
+
+.seat.occupied {
+    background-color: red;
+}
+
+

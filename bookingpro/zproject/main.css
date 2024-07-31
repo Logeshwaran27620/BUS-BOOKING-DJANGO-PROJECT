@@ -1,0 +1,215 @@
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+#logo{
+    width: 300px;
+    justify-content: flex-start;
+    margin-left: 0%;
+}
+.nav-logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover{
+    border-bottom: 2px solid #fff;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn{
+    display: none;
+}
+.carousel-inner{
+    width: 100%;
+    height: 530px;
+}
+.carousel-item{
+    width: 100%;
+    height: 95%;
+}
+.image{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.drop{
+	color: black;
+	width: 30%;
+	height: 40px;
+	font-size: 1.3em;
+	margin-bottom: 20px;
+	margin-right: 1.1%;
+	margin-left: 1.2%;
+}
+.dep{
+    text-align: center;
+}
+
+
+#busButton{
+	background-color: rgba(150,0,0,0.7);
+	padding: 9px;
+	border: none;
+    width: 170px;
+}
+.img1{
+   
+    width: 100%;
+    height: 100px;
+    
+}
+.pic{
+    object-fit: cover;
+    width: 100%;
+}
+#home{
+    padding-left: 30px;
+}
+.container1{
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: rgba(218, 178, 178, 0.906);
+    margin: 20px;
+    border-radius: 15px;
+    border-top-left-radius: 300px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.container2{
+    background-color: rgba(218, 178, 178, 0.906);
+    margin: 20px;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    padding-bottom: 10px;
+ 
+}
+.txt{
+    text-align: center;
+}
+.container3{
+    background-color: rgba(218, 178, 178, 0.906);
+    margin: 20px;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    text-align: center;
+    padding-bottom : 10px;
+ 
+}
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.faq-content {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.faq-content li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.faq-content li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #b89f9f;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.faq-content .content {
+    background-color: #d1a3a3;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.faq-content input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq-content input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.faq small {
+    font-size: 13px;
+}
+
+.faq .email-signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
